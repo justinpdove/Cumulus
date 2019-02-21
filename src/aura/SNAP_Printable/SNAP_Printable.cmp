@@ -1,0 +1,3 @@
+<aura:component description="SNAP_Printable">
+    <ltng:require styles="{!$Resource.PrintStyle}"/>
+</aura:component>

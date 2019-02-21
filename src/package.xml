@@ -603,6 +603,8 @@
         <members>HH_ContainerLoadedEvent</members>
         <members>HH_HouseholdSavedEvent</members>
         <members>ManageHHApp</members>
+        <members>SNAP_App</members>
+        <members>SNAP_Giving</members>
         <members>autocomplete</members>
         <members>autocompleteOption</members>
         <members>autocompleteSelectListOption</members>
