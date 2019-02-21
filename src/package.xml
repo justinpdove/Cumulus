@@ -454,7 +454,6 @@
         <members>UTIL_Where</members>
         <members>UTIL_Where_TEST</members>
         <members>UTIL_iSoqlListViewConsumer</members>
-        <members>UTIL_LightningComponentSupport</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -1434,8 +1433,8 @@
         <members>bgeBatchSelectedFields</members>
         <members>bgeBatchSetBatchOptions</members>
         <members>bgeBatchSetFieldOptions</members>
-        <members>bgeCopyBatchSetupButton</members>
         <members>bgeCopyBatchSetupBatchNameAppend</members>
+        <members>bgeCopyBatchSetupButton</members>
         <members>bgeEditBatchFieldOptionsWarning</members>
         <members>bgeEditBatchFieldSelectionWarning</members>
         <members>bgeEditBatchOptionsWarning</members>
@@ -2691,5 +2690,5 @@
         <members>Opportunity.Opportunity Email Acknowledgment</members>
         <name>WorkflowRule</name>
     </types>
-    <version>43.0</version>
+    <version>45.0</version>
 </Package>

@@ -1,0 +1,20 @@
+<!--
+ - Created by justin.dove on 2/21/19.
+ -->
+
+<aura:component description="SNAP_InfoParent" controller="SNAP_HeaderComponentController" implements="force:appHostable,force:hasRecordId,flexipage:availableForAllPageTypes">
+    <aura:attribute name="contactId" type="Id" />
+    <aura:attribute name="infoWrapper" type="Object" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <p class="slds-text-heading--medium slds-m-around_x-small">
+        {!v.infoWrapper.contact.Name}
+    </p>
+
+    <div class="slds-box slds-m-around_x-small">
+        <p class="slds-text slds-m-top_xx-small slds-m-bottom_xx-small"> <b>Email: </b> {!v.infoWrapper.contact.Email} </p>
+        <p class="slds-text slds-m-top_xx-small slds-m-bottom_xx-small"> <b>Phone: </b> {!v.infoWrapper.contact.Phone} </p>
+        <p class="slds-text slds-m-top_xx-small slds-m-bottom_xx-small"> <b>Donor Status: </b> {!v.infoWrapper.contact.SNAP_Donor_Status__c} </p>
+    </div>
+</aura:component>

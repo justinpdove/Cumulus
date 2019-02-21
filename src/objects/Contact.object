@@ -1511,6 +1511,31 @@
         </displayedFields>
         <label>Contact Merge Found FS</label>
     </fieldSets>
+    <fieldSets>
+        <fullName>SNAP_InfoDetails</fullName>
+        <description>The group of fields that will be present in the donor snapshot header.</description>
+        <displayedFields>
+            <field>Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SNAP_Donor_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>SNAP Info Details</label>
+    </fieldSets>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
     <fields>
         <fullName>Address_Verification_Status__c</fullName>
         <description>The verification status of the current Address. If this Address requires verification, navigate to the current Address record and select Verify Address.  Consult the Power of Us Hub documentation for more information on Address Verification..</description>
@@ -1775,6 +1800,36 @@
         <inlineHelpText>Indicates if this Contact is designated as the Primary Contact on their Account (read only).</inlineHelpText>
         <label>Primary Contact</label>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SNAP_Donor_Status__c</fullName>
+        <description>A donor&apos;s status.</description>
+        <externalId>false</externalId>
+        <label>Donor Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Current</fullName>
+                    <default>false</default>
+                    <label>Current</label>
+                </value>
+                <value>
+                    <fullName>Lapsed</fullName>
+                    <default>false</default>
+                    <label>Lapsed</label>
+                </value>
+                <value>
+                    <fullName>Potential</fullName>
+                    <default>false</default>
+                    <label>Potential</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Soft_Credit_Last_N_Days__c</fullName>

@@ -1,0 +1,6 @@
+<!--
+ - Created by justin.dove on 2/21/19.
+ -->
+
+<aura:component description="SNAP_InfoDetails" controller="SNAP_HeaderComponentController">
+</aura:component>
